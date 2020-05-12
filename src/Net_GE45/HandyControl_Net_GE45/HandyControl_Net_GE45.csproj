@@ -122,6 +122,12 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Lang.resx</DependentUpon>
     </Compile>
+    <Compile Include="..\..\Shared\HandyControl_Shared\Properties\Langs\LangProvider.cs">
+      <Link>Properties\Langs\LangProvider.cs</Link>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>LangProvider.tt</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <Reference Include="PresentationCore" />
@@ -134,6 +140,9 @@
     <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
   </ItemGroup>
   <ItemGroup>
+   <EmbeddedResource Include="..\..\Shared\HandyControl_Shared\Properties\Langs\Lang.tr.resx">
+      <Link>Properties\Langs\Lang.tr.resx</Link>
+    </EmbeddedResource>
     <EmbeddedResource Include="..\..\Shared\HandyControl_Shared\Properties\Langs\Lang.en.resx">
       <Link>Properties\Langs\Lang.en.resx</Link>
     </EmbeddedResource>
@@ -146,12 +155,20 @@
     <EmbeddedResource Include="..\..\Shared\HandyControl_Shared\Properties\Langs\Lang.ko-KR.resx">
       <Link>Properties\Langs\Lang.ko-KR.resx</Link>
     </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Shared\HandyControl_Shared\Properties\Langs\Lang.ru.resx">
+      <Link>Properties\Langs\Lang.ru.resx</Link>
+    </EmbeddedResource>
     <EmbeddedResource Include="..\..\Shared\HandyControl_Shared\Properties\Langs\Lang.resx">
       <Link>Properties\Langs\Lang.resx</Link>
       <Generator>PublicResXFileCodeGenerator</Generator>
       <LastGenOutput>Lang.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
     </EmbeddedResource>
+    <Content Include="..\..\Shared\HandyControl_Shared\Properties\Langs\LangProvider.tt">
+      <Link>Properties\Langs\LangProvider.tt</Link>
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>LangProvider.cs</LastGenOutput>
+    </Content>
   </ItemGroup>
   <ItemGroup>
     <Resource Include="..\..\Shared\HandyControl_Shared\Resources\dropper.cur">
